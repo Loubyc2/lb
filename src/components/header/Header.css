@@ -1,0 +1,107 @@
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;1,200&display=swap');
+    .header {
+        background-color: #eaeaea;
+        padding-top: 8px;
+    }
+    
+    .header__top-logo {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .header__top-logo>h4 {
+        font-size: 25px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        margin-bottom: -6px;
+        color: rgb(80, 58, 58);
+    }
+    
+    .header__top-logo>span {
+        font-size: 16px;
+        font-style: italic;
+        color: rgb(104, 83, 83);
+    }
+    
+    .header__top-search-wrapper {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid rgb(204, 204, 204);
+        border-bottom: 1px solid rgb(204, 204, 204);
+        padding: 10px;
+    }
+    
+    .header__top-user {
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        color: #7c7d7c;
+    }
+    
+    .header__top-user>span {
+        margin-left: 5px;
+    }
+    
+    .header__top-search {
+        margin-right: 20px;
+    }
+    
+    .header__top-item {
+        position: relative;
+        bottom: 18px;
+        left: 2px;
+        padding: 2px 6px;
+        background-color: #2f305e;
+        color: #ef374e;
+        border-radius: 100%;
+        margin-bottom: 0;
+    }
+    
+    .header__bottom {
+        background-color: #333b44;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+    }
+    
+    .scroll {
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        background-color: #333b44;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .header__nav {
+        margin-left: 5.5rem;
+    }
+    
+    .header__nav-links {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+    }
+    
+    .header__nav-link {
+        padding: 0 20px;
+    }
+    
+    .header__nav-link li {
+        margin-bottom: 0;
+        color: #6caddf;
+        font-size: 1.2rem;
+    }
+    
+    .header__nav-link:hover {
+        text-decoration: none;
+    }
+    
+    .header__nav-link li:hover {
+        color: #e6d5b8;
+    }
