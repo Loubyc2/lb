@@ -374,3 +374,14 @@ Media query  */
         padding-right: 8%;
     }
 }
+
+@media screen and (max-width :500px) {
+    .home__offer-banner {
+        display: flex;
+        flex-direction: column;
+    }
+    .home__offer-banner-img {
+        max-width: 100%;
+        height: auto;
+    }
+}

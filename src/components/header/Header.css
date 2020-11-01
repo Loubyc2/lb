@@ -137,3 +137,40 @@
             margin-bottom: 0;
         }
     }
+    
+    @media screen and (max-width :500px) {
+        .header__bottom {
+            background-color: #333b44;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header__nav {
+            margin-left: 0;
+        }
+        .header__nav-links {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
+        }
+        .header__nav-link {
+            padding: 0 10px;
+        }
+        .header__nav-link li {
+            margin-bottom: 0;
+            color: #6caddf;
+            font-size: 1.2rem;
+        }
+        .scroll {
+            position: fixed;
+            top: 0;
+            z-index: 100;
+            background-color: #333b44;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+    }
