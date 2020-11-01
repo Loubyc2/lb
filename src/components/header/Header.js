@@ -43,7 +43,7 @@ function Header() {
                         </div>
                         <div className="header__top-icons">
                             <FiShoppingCart style={{ marginBottom: "0", color: '#222', display: 'inline-flex' }} size={30} />
-                            <span className="header__top-item">0</span>
+                            <span className="header__top-counter">0</span>
                         </div>
                     </div>
 

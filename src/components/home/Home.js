@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import * as FaIcons from 'react-icons/fa'
 
@@ -11,10 +11,10 @@ import carousel4 from '../../img/carousel-4.jpg';
 import beauty1 from '../../img/beauty/beauty-1.png';
 import beauty2 from '../../img/beauty/beauty-2.png';
 import beauty3 from '../../img/products/product-1.png'
-import product1 from '../../img/products/product-5.jpeg';
-import product2 from '../../img/products/product-2.jpg';
-import product3 from '../../img/products/product-3.jpg';
-import product4 from '../../img/products/product-4.jpg';
+import product1 from '../../img/products/product-5.5.jpeg';
+import product2 from '../../img/products/product-2.2.jpg';
+import product3 from '../../img/products/product-9.jpg';
+import product4 from '../../img/products/product-8.8.jpg';
 import product5 from '../../img/products/product-6.jpg';
 import brand from '../../img/brand.jpg'
 import trending1 from '../../img/trending/trending-1.jpg';
@@ -32,6 +32,14 @@ import offerBanner from '../../img/offer-banner.jpg';
 
 
 function Home() {
+    const [screen, setScreen] = useState(window.innerWidth)
+
+    const getSize = () => {
+        setScreen(window.innerWidth)
+    }
+    useEffect(() => {
+        window.addEventListener('resize', getSize)
+    })
     return (
         <div className='home'>
             <div id='home-carousel' className="carousel slide" data-ride="carousel">
@@ -101,25 +109,25 @@ function Home() {
             <div style={{ padding: '0 42px' }}>
                 <div className="home__news">
                     <h1 className="home__news-title">Los nuevos</h1>
-                    <div className="home__news-img">
-                        <div className="home__news-img-left">
-                            <img src={product1} alt="" />
+                    <div className="home__news-imgs">
+                        <div className="home__news-left">
+                            <img className="home__news-left-img" src={product1} alt="" />
                         </div>
-                        <div className="home__news-img-right">
-                            <figure>
-                                <img src={product2} alt="" />
-                                <img className='' src={product3} alt="" />
-                            </figure>
-                            <figure className="">
-                                <img src={product4} alt="" />
-                                <img className='' src={product5} alt="" />
-                            </figure>
+                        <div className="home__news-right">
+                            <div className='d-flex'>
+                                <img className='mx-1 home__news-right-img' src={product2} alt="..." />
+                                <img className='mx-1 home__news-right-img' src={product3} alt="..." />
+                            </div>
+                            <div className='d-flex'>
+                                <img className='m-1 home__news-right-img' src={product4} alt="..." />
+                                <img className='m-1 home__news-right-img' src={product5} alt="..." />
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="home__brand">
-                <div className="home__brand-left">
+                <div className="home__brand-left p-4">
                     <h6>Moda hombre</h6>
                     <p>Lorem Ipsum is simply thedummy text of dummy text of the printing and typesetting industry</p>
                     <button className='btn'>comprar</button>
@@ -163,6 +171,7 @@ function Home() {
                 </form>
 
             </div>
+
             <footer className=' bg-dark '>
                 <div className='p-5 d-flex justify-content-around text-light mt-5'>
                     <div className='home__footer-nav'>
@@ -195,6 +204,7 @@ function Home() {
                 </div>
                 <p className='text-muted text-center'> © 2020 - Ecommerce Website design by Lb Design</p>
             </footer>
+            {screen}
         </div>
     )
 }
