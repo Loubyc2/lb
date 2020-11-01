@@ -3,6 +3,10 @@
     background-color: #eeeeee;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 .carousel-content {
     background-position: center center;
     background-repeat: no-repeat;
@@ -161,12 +165,13 @@
 }
 
 .home__news-img-left {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 .home__news-img-left>img {
     height: 715.5px;
-    width: 100%;
+    max-width: 100%;
 }
 
 .home__news-img-right {
@@ -175,11 +180,11 @@
     align-items: flex-end;
     flex-direction: column;
     margin-left: auto;
-    width: 100%;
+    max-width: 100%;
 }
 
 .home__news-img-right figure {
-    width: 100%;
+    max-width: 100%;
 }
 
 .home__news-img-right figure>img {
@@ -238,4 +243,97 @@
     width: 100%;
     height: 220px;
     object-fit: cover;
+}
+
+
+/* Home Trending */
+
+.home__trending {
+    overflow: hidden;
+    padding: 15px 35px;
+}
+
+.home__trending>h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 200;
+    color: #222;
+}
+
+.home__offer-banner {
+    display: flex;
+    background-color: #9fbeae;
+}
+
+.home__offer-banner-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.home__newsletter {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-self: center;
+    padding: 10px 56px;
+}
+
+.home__newsletter-title {
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.home__newsletter small {
+    font-size: 20px;
+    color: #fff !important;
+}
+
+.home__newsletter label {
+    color: #222;
+    font-size: 18px;
+}
+
+.btn {
+    margin: auto;
+}
+
+
+/* Footer */
+
+.home__footer-contact,
+.home__footer-nav {
+    border-right: 1px solid rgb(77, 77, 77);
+    padding-right: 16%;
+}
+
+.home__footer-items a {
+    color: #f8f1f1;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.home__footer-items a:hover {
+    color: #eaeaea8b;
+}
+
+.home__footer-contact {
+    color: #eaeaea8b;
+}
+
+.home__footer-contact>h4,
+.home__footer-socialMedia>h4 {
+    color: #f8f1f1;
+}
+
+.home__footer-contact span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.home__footer-icon {
+    font-size: 20px;
+    cursor: pointer;
+    color: #eaeaea8b;
 }

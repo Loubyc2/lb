@@ -18,7 +18,7 @@ function Header() {
             }
         })
         return () => {
-            window.removeEventListener('scroll')
+            window.removeEventListener('scroll');
         }
     }, [])
     return (
@@ -54,9 +54,9 @@ function Header() {
                         <ul className="header__nav-links">
                             <NavLink to='/' className='header__nav-link'><li>Inicio</li></NavLink>
                             <NavLink to='/' className='header__nav-link'><li>Belleza</li></NavLink>
-                            <NavLink to='/' className='header__nav-link'><li>Tecnologias</li></NavLink>
+                            <NavLink to='/' className='header__nav-link'><li>Tecnologías</li></NavLink>
                             <NavLink to='/' className='header__nav-link'><li>Paginas</li></NavLink>
-                            <NavLink to='/' className='header__nav-link'><li>Contactos</li></NavLink>
+                            <NavLink to='/' className='header__nav-link'><li>Contacto</li></NavLink>
                         </ul>
                     </nav>
                 </div>

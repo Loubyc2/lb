@@ -1,5 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import * as FaIcons from 'react-icons/fa'
+
 import './Home.css'
+import HomeTrending from './HomeTrending';
 
 import carousel1 from '../../img/carousel-1.jpg';
 import carousel2 from '../../img/carousel-2.1.jpg';
@@ -13,6 +17,16 @@ import product3 from '../../img/products/product-3.jpg';
 import product4 from '../../img/products/product-4.jpg';
 import product5 from '../../img/products/product-6.jpg';
 import brand from '../../img/brand.jpg'
+import trending1 from '../../img/trending/trending-1.jpg';
+import trending2 from '../../img/trending/trending-2.jpg';
+import trending3 from '../../img/trending/trending-3.jpg';
+import trending4 from '../../img/trending/trending-4.jpg';
+import trending5 from '../../img/trending/trending-5.jpg';
+import trending6 from '../../img/trending/trending-6.jpg';
+import trending7 from '../../img/trending/trending-7.jpg';
+import trending8 from '../../img/trending/trending-8.jpg';
+import offerBanner from '../../img/offer-banner.jpg';
+
 
 
 
@@ -36,7 +50,7 @@ function Home() {
                             <div className="carousel-text">
                                 <h1> Fashion <span style={{ color: '#222', fontWeight: 'normal' }}>&</span> <span>belleza</span></h1>
                                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ipsum amet.</span>
-                                <button className='btn btn-outline-info btn-sm mt-2'>Comprar</button>
+                                <button className='btn btn-outline-info btn-md mt-2'>Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -46,7 +60,7 @@ function Home() {
                             <div className="carousel-text">
                                 <h1> Fashion <span style={{ color: '#222', fontWeight: 'normal' }}>&</span> <span>Shop</span></h1>
                                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ipsum amet.</span>
-                                <button className='btn btn-outline-info btn-sm mt-2'>Comprar</button>
+                                <button className='btn btn-outline-info btn-md mt-2'>Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -114,6 +128,73 @@ function Home() {
                     <img src={brand} alt="" />
                 </div>
             </div>
+            <div className='home__trending'>
+                <h1 className="home__tending-title">Tendencias</h1>
+                <div className='d-flex mw-100'>
+                    <HomeTrending a={true} img={trending1} title='adipisci velit' price={22} pos_rating={5} neg_rating={0} />
+                    <HomeTrending img={trending2} title='nulla pariatur' price={100} pos_rating={2} neg_rating={3} />
+                    <HomeTrending img={trending3} title='autem vel eumiure' price={35} pos_rating={4} neg_rating={1} />
+                    <HomeTrending img={trending4} title='vel illum qui dolorem' price={14} pos_rating={2} neg_rating={3} />
+                </div>
+                <div className='d-flex mw-100'>
+                    <HomeTrending img={trending5} title='eum iu' price={23} pos_rating={4} neg_rating={1} />
+                    <HomeTrending img={trending6} title='Qure reprehenderit' price={33} pos_rating={5} neg_rating={0} />
+                    <HomeTrending img={trending7} title='velit tur' price={40} pos_rating={3} neg_rating={2} />
+                    <HomeTrending img={trending8} title='autem vel eum ' price={50} pos_rating={4} neg_rating={1} />
+                </div>
+            </div>
+
+            <div className="home__offer-banner">
+                <img className='home__offer-banner-img' src={offerBanner} alt="" />
+                <form action="" className='home__newsletter'>
+                    <div className='text-center my-3'>
+                        <h4 className='home__newsletter-title'>Nuestro newsletter</h4>
+                        <small className='text-muted'>Suscribirse para tener las ultimas ofertas</small>
+                    </div>
+                    <div>
+                        <label htmlFor="input-name">Ingresa tu nombre</label>
+                        <input className='form-control' type="text" id='input-name' />
+                    </div>
+                    <div className='my-2'>
+                        <label htmlFor="input-email">Ingresa tu email</label>
+                        <input className='form-control' type="text" id='input-email' />
+                    </div>
+                    <button className='btn btn-block my-2 text-uppercase text-light bg-primary'>suscribirse</button>
+                </form>
+
+            </div>
+            <footer className=' bg-dark '>
+                <div className='p-5 d-flex justify-content-around text-light mt-5'>
+                    <div className='home__footer-nav'>
+                        <ul className='list-inline home__footer-items'>
+                            <Link className='text-decoration-none' to='/'><li>Inicio</li></Link>
+                            <Link className='text-decoration-none' to='/'><li>Belleza</li></Link>
+                            <Link className='text-decoration-none' to='/'><li>Paginas</li></Link>
+                            <Link className='text-decoration-none' to='/'><li>Tecnologías</li></Link>
+
+                        </ul>
+                    </div>
+
+                    <div className='home__footer-contact'>
+                        <h4>Contacto</h4>
+                        <div className="pt-2">
+                            <p> <span>Email:</span> <em>loubyc2@gmail.com</em> </p>
+                            <p> <span>Tel:</span> <em> +56 9 9946 6909</em> </p>
+                        </div>
+                    </div>
+                    <div className='home__footer-socialMedia'>
+                        <h4>Redes Sociales</h4>
+                        <div className='home__footer-icons text-center pt-2'>
+                            <FaIcons.FaFacebookF className='home__footer-icon mx-2' />
+                            <FaIcons.FaTwitter className='home__footer-icon mx-2' />
+                            <FaIcons.FaInstagram className='home__footer-icon mx-2' />
+                        </div>
+
+                    </div>
+
+                </div>
+                <p className='text-muted text-center'> © 2020 - Ecommerce Website design by Lb Design</p>
+            </footer>
         </div>
     )
 }
