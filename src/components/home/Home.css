@@ -376,12 +376,134 @@ Media query  */
 }
 
 @media screen and (max-width :500px) {
-    .home__offer-banner {
+    .home__news {
+        padding: 10px 35px;
+        margin-top: 20px;
+        background-color: #dbdbdb;
+    }
+    .home__news-title {
+        font-size: 50px;
+        font-weight: 200;
+        color: #222;
+    }
+    .home__news-imgs {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .home__news-imgs img {
+        object-fit: cover;
+    }
+    .home__news-left {
+        max-width: 100%;
+        height: auto;
+        display: flex;
+    }
+    .home__news-right {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .home__news-right div {
         display: flex;
         flex-direction: column;
     }
-    .home__offer-banner-img {
+    .home__brand {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 140px;
+    }
+    .home__brand-left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #bcdbd5;
+    }
+    .home__brand-left>h6 {
+        text-transform: uppercase;
+        font-family: 'Montserrat';
+        color: #242c34;
+        font-weight: 600;
+    }
+    .home__brand-left>p {
+        color: #666a7c;
+    }
+    .home__brand-left>button {
+        color: #236b99;
+        text-transform: uppercase;
+    }
+    .home__brand-left>button:hover {
+        background-color: #236b99;
+        color: #b8b9c2;
+    }
+    .home__brand-right {
+        width: 100%;
+    }
+    .home__brand-right>img {
         max-width: 100%;
         height: auto;
+        object-fit: cover;
+    }
+    /* Home Promotion */
+    .home__promotions {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-top: 30px;
+        padding: 0 35px;
+    }
+    .home__promotion {
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 80px;
+        margin-top: 10px;
+        width: 100%;
+        height: 300px;
+        background-color: #bcdbd5;
+    }
+    .home__promotion:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, .6);
+        width: 100%;
+        height: 100%;
+    }
+    .home__promotion-text>* {
+        color: #fff;
+        z-index: 2;
+        position: relative;
+    }
+    .home__promotion-text {
+        position: absolute;
+        left: 35%;
+        top: 100px;
+        text-align: center;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    .home__promotion-text>h4 {
+        letter-spacing: 1px;
+        font-size: 30px;
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 0;
+        color: #fadcd9;
+    }
+    .home__promotion-text {
+        position: absolute;
+        top: 80px;
+        left: 3%;
+        text-align: center;
+    }
+    .home__promotion-text>h4 {
+        font-size: 24px;
     }
 }
