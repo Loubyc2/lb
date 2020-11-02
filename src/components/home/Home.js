@@ -204,7 +204,7 @@ function Home() {
                 </div>
                 <p className='text-muted text-center'> © 2020 - Ecommerce Website design by Lb Design</p>
             </footer>
-            {screen}
+            {/* {screen} */}
         </div>
     )
 }
