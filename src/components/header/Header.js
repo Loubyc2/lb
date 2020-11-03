@@ -62,7 +62,7 @@ function Header() {
                         </ul>
 
                     </nav>
-                    <div className='header__menu-icon' >
+                    <div className='header__menu-icon'>
                         <FiIcons.FiMenu color='white' size={28} />
                     </div>
                 </div>
