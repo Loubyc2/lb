@@ -9,7 +9,7 @@ import { useStateValue } from '../../StateProvider';
 
 function Header() {
     const [scroll, setScroll] = useState(true)
-    const [{ basket }, dispatch] = useStateValue()
+    const [{ basket }] = useStateValue()
 
     useEffect(() => {
         window.addEventListener('scroll', () => {
