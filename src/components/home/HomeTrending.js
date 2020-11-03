@@ -3,7 +3,7 @@ import { useStateValue } from '../../StateProvider';
 import "./HomeTrending.css"
 
 function HomeTrending({ img, title, price, pos_rating, neg_rating, a, btn, id }) {
-    const [state, dispatch] = useStateValue()
+    const [dispatch] = useStateValue()
 
     const addToBasket = () => {
         dispatch({
