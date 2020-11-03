@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { FiShoppingCart } from 'react-icons/fi'
-import { FiUser } from 'react-icons/fi'
+import * as FiIcons from 'react-icons/fi'
+
 
 import "./Header.css";
+import { useStateValue } from '../../StateProvider';
 
 
 function Header() {
     const [scroll, setScroll] = useState(true)
+    const [{ basket }, dispatch] = useStateValue()
 
     useEffect(() => {
         window.addEventListener('scroll', () => {
@@ -16,11 +18,11 @@ function Header() {
             } else {
                 setScroll(true)
             }
-        })
+        });
         return () => {
             window.removeEventListener('scroll');
-        }
-    }, [])
+        };
+    }, []);
     return (
         <div className="header ">
 
@@ -32,7 +34,7 @@ function Header() {
                     </div>
                     <div className="header__top-search-wrapper container my-3">
                         <div className="header__top-user">
-                            <FiUser size={20} />
+                            <FiIcons.FiUser size={20} />
                             <span>Cuenta</span>
                         </div>
                         <div className="input-group header__top-search w-75">
@@ -42,8 +44,8 @@ function Header() {
                             </div>
                         </div>
                         <div className="header__top-icons">
-                            <FiShoppingCart style={{ marginBottom: "0", color: '#222', display: 'inline-flex' }} size={30} />
-                            <span className="header__top-counter">0</span>
+                            <FiIcons.FiShoppingCart style={{ marginBottom: "0", color: '#222', display: 'inline-flex' }} size={30} />
+                            <span className="header__top-counter">{basket.length}</span>
                         </div>
                     </div>
 
@@ -58,7 +60,11 @@ function Header() {
                             <NavLink to='/' className='header__nav-link'><li>Paginas</li></NavLink>
                             <NavLink to='/' className='header__nav-link'><li>Contacto</li></NavLink>
                         </ul>
+
                     </nav>
+                    <div className='header__menu-icon' >
+                        <FiIcons.FiMenu color='white' size={28} />
+                    </div>
                 </div>
             </div>
         </div>

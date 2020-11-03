@@ -74,11 +74,11 @@ function Home() {
                     </div>
 
                 </div>
-                <a class="carousel-control-prev" href="#home-carousel" role="button" data-slide="prev">
+                <a className="carousel-control-prev" href="#home-carousel" role="button" data-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span className="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#home-carousel" role="button" data-slide="next">
+                <a className="carousel-control-next" href="#home-carousel" role="button" data-slide="next">
                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
                     <span className="sr-only">Next</span>
                 </a>
@@ -139,16 +139,16 @@ function Home() {
             <div className='home__trending'>
                 <h1 className="home__tending-title">Tendencias</h1>
                 <div className='d-flex mw-100'>
-                    <HomeTrending a={true} img={trending1} title='adipisci velit' price={22} pos_rating={5} neg_rating={0} />
-                    <HomeTrending img={trending2} title='nulla pariatur' price={100} pos_rating={2} neg_rating={3} />
-                    <HomeTrending img={trending3} title='autem vel eumiure' price={35} pos_rating={4} neg_rating={1} />
-                    <HomeTrending img={trending4} title='vel illum qui dolorem' price={14} pos_rating={2} neg_rating={3} />
+                    <HomeTrending a={true} img={trending1} title='adipisci velit' price={22} pos_rating={5} neg_rating={0} btn='compar' id='1' />
+                    <HomeTrending img={trending2} title='nulla pariatur' price={100} pos_rating={2} neg_rating={3} btn='compar' id='2' />
+                    <HomeTrending img={trending3} title='autem vel eumiure' price={35} pos_rating={4} neg_rating={1} btn='compar' id='3' />
+                    <HomeTrending img={trending4} title='vel illum qui dolorem' price={14} pos_rating={2} neg_rating={3} btn='compar' id='4' />
                 </div>
                 <div className='d-flex mw-100'>
-                    <HomeTrending img={trending5} title='eum iu' price={23} pos_rating={4} neg_rating={1} />
-                    <HomeTrending img={trending6} title='Qure reprehenderit' price={33} pos_rating={5} neg_rating={0} />
-                    <HomeTrending img={trending7} title='velit tur' price={40} pos_rating={3} neg_rating={2} />
-                    <HomeTrending img={trending8} title='autem vel eum ' price={50} pos_rating={4} neg_rating={1} />
+                    <HomeTrending img={trending5} title='eum iu' price={23} pos_rating={4} neg_rating={1} btn='compar' id='5' />
+                    <HomeTrending img={trending6} title='Qure reprehenderit' price={33} pos_rating={5} neg_rating={0} btn='compar' id='6' />
+                    <HomeTrending img={trending7} title='velit tur' price={40} pos_rating={3} neg_rating={2} btn='compar' id='7' />
+                    <HomeTrending img={trending8} title='autem vel eum ' price={50} pos_rating={4} neg_rating={1} btn='compar' id='8' />
                 </div>
             </div>
 

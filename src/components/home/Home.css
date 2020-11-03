@@ -506,4 +506,9 @@ Media query  */
     .home__promotion-text>h4 {
         font-size: 24px;
     }
+    .home__footer-contact,
+    .home__footer-nav {
+        border-right: 1px solid rgb(77, 77, 77);
+        padding-right: 8%;
+    }
 }

@@ -61,7 +61,7 @@
     
     .header__bottom {
         background-color: #333b44;
-        padding: 10px 0;
+        padding: 10px 28px;
         display: flex;
         align-items: center;
     }
@@ -104,6 +104,11 @@
     
     .header__nav-link li:hover {
         color: #e6d5b8;
+    }
+    
+    .header__menu-icon {
+        display: none;
+        margin-left: auto;
     }
     /* Media Query */
     
@@ -172,5 +177,12 @@
             display: flex;
             align-items: center;
             width: 100%;
+        }
+        .header__nav {
+            display: none;
+        }
+        .header__menu-icon {
+            display: flex;
+            margin-right: 20px;
         }
     }
