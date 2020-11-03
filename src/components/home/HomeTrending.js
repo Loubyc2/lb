@@ -33,7 +33,7 @@ function HomeTrending({ img, title, price, pos_rating, neg_rating, a, btn, id })
             <div className='wrapper-btn'>
                 <button onClick={addToBasket} className='btn btn-outline-success text-uppercase' type="">{btn}</button>
             </div>
-            {state}
+
         </div>
     )
 }
