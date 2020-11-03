@@ -3,7 +3,7 @@ import { useStateValue } from '../../StateProvider';
 import "./HomeTrending.css"
 
 function HomeTrending({ img, title, price, pos_rating, neg_rating, a, btn, id }) {
-    const [dispatch] = useStateValue()
+    const [state, dispatch] = useStateValue()
 
     const addToBasket = () => {
         dispatch({
@@ -33,7 +33,7 @@ function HomeTrending({ img, title, price, pos_rating, neg_rating, a, btn, id })
             <div className='wrapper-btn'>
                 <button onClick={addToBasket} className='btn btn-outline-success text-uppercase' type="">{btn}</button>
             </div>
-
+            {state}
         </div>
     )
 }
