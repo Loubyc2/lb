@@ -9,6 +9,8 @@ import { useStateValue } from '../../StateProvider';
 
 function Header() {
     const [scroll, setScroll] = useState(true)
+    const [openMenu, setOpenMenu] = useState(true)
+
     const [{ basket }] = useStateValue()
 
     useEffect(() => {
@@ -52,7 +54,7 @@ function Header() {
                 </div>
 
                 <div className={scroll ? 'header__bottom' : 'scroll'}>
-                    <nav className="header__nav">
+                    <nav className={openMenu ? 'header__nav' : 'open-menu'}>
                         <ul className="header__nav-links">
                             <NavLink to='/' className='header__nav-link'><li>Inicio</li></NavLink>
                             <NavLink to='/' className='header__nav-link'><li>Belleza</li></NavLink>
@@ -60,9 +62,8 @@ function Header() {
                             <NavLink to='/' className='header__nav-link'><li>Paginas</li></NavLink>
                             <NavLink to='/' className='header__nav-link'><li>Contacto</li></NavLink>
                         </ul>
-
                     </nav>
-                    <div className='header__menu-icon'>
+                    <div className='header__menu-icon' onClick={() => setOpenMenu(!openMenu)}>
                         <FiIcons.FiMenu color='white' size={28} />
                     </div>
                 </div>
