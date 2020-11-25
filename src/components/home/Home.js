@@ -176,7 +176,7 @@ function Home() {
                             <Link className='text-decoration-none' to='/'><li>Tecnologías</li></Link>
                         </ul>
                     </div>
-                    <div className='home__footer-contact my-3'>
+                    <div className='home__footer-contact my-4'>
                         <h4>Contacto</h4>
                         <div className="pt-1">
                             <p> <span>Email:</span> <em>loubyc2@gmail.com</em> </p>

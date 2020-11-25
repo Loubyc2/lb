@@ -561,6 +561,7 @@ Media query  */
     }
     .home__footer-items {
         display: flex;
+        align-items: center;
     }
     .home__footer-items a {
         font-size: 18px;
@@ -568,9 +569,11 @@ Media query  */
     }
     .home__footer-contact>div {
         display: flex;
+        flex-direction: column;
     }
     .home__footer-contact>div>p {
         padding: 0 10px;
+        margin-bottom: 0;
     }
     .home__footer-contact,
     .home__footer-nav {
