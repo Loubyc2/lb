@@ -176,9 +176,9 @@ function Home() {
                             <Link className='text-decoration-none' to='/'><li>Tecnologías</li></Link>
                         </ul>
                     </div>
-                    <div className='home__footer-contact'>
+                    <div className='home__footer-contact my-3'>
                         <h4>Contacto</h4>
-                        <div className="pt-2">
+                        <div className="pt-1">
                             <p> <span>Email:</span> <em>loubyc2@gmail.com</em> </p>
                             <p> <span>Tel:</span> <em> +56 9 9946 6909</em> </p>
                         </div>
