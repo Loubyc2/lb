@@ -305,10 +305,20 @@ a:hover {
 
 /* Footer */
 
+.home__footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+}
+
 .home__footer-contact,
 .home__footer-nav {
     border-right: 1px solid rgb(77, 77, 77);
-    padding-right: 16%;
+}
+
+.home__footer-items {
+    text-align: justify;
 }
 
 .home__footer-items a {
@@ -544,9 +554,27 @@ Media query  */
     .home__promotion-text>h4 {
         font-size: 24px;
     }
+    /* Home Footer */
+    .home__footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .home__footer-items {
+        display: flex;
+    }
+    .home__footer-items a {
+        font-size: 18px;
+        padding: 0 4px;
+    }
+    .home__footer-contact>div {
+        display: flex;
+    }
+    .home__footer-contact>div>p {
+        padding: 0 10px;
+    }
     .home__footer-contact,
     .home__footer-nav {
-        border-right: 1px solid rgb(77, 77, 77);
-        padding-right: 8%;
+        border-right: none;
+        padding-right: 0;
     }
 }

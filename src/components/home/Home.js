@@ -167,17 +167,15 @@ function Home() {
             </div>
 
             <footer className=' bg-dark '>
-                <div className='p-5 d-flex justify-content-around text-light mt-5'>
+                <div className='home__footer p-5 mt-5'>
                     <div className='home__footer-nav'>
                         <ul className='list-inline home__footer-items'>
                             <Link className='text-decoration-none' to='/'><li>Inicio</li></Link>
                             <Link className='text-decoration-none' to='/'><li>Belleza</li></Link>
                             <Link className='text-decoration-none' to='/'><li>Paginas</li></Link>
                             <Link className='text-decoration-none' to='/'><li>Tecnologías</li></Link>
-
                         </ul>
                     </div>
-
                     <div className='home__footer-contact'>
                         <h4>Contacto</h4>
                         <div className="pt-2">
@@ -192,9 +190,7 @@ function Home() {
                             <FaIcons.FaTwitter className='home__footer-icon mx-2' />
                             <FaIcons.FaInstagram className='home__footer-icon mx-2' />
                         </div>
-
                     </div>
-
                 </div>
                 <p className='text-muted text-center'> © 2020 - Ecommerce Website design by Lb Design</p>
             </footer>
