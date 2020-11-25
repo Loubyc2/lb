@@ -376,6 +376,22 @@ Media query  */
 }
 
 @media screen and (max-width :500px) {
+    /* Home Carousel */
+    .carousel-text-tech h1 {
+        text-align: center;
+    }
+    .carousel-text {
+        left: 0;
+        text-align: center;
+        width: 100%;
+        padding: 0 30px;
+    }
+    .carousel-text>h1 {
+        font-size: 35px;
+    }
+    .carousel-text>span {
+        margin: 10px 0 35px 0;
+    }
     .home__news {
         padding: 10px 35px;
         margin-top: 20px;

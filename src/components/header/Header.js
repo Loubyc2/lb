@@ -20,7 +20,7 @@ function Header() {
             }
         });
         return () => {
-            window.removeEventListener('scroll');
+            window.removeEventListener('scroll', setScroll(false));
         };
     }, []);
     return (
